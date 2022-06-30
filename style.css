@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(52, 52, 52);
+}
+#game{
+    width: 400px;
+    height: 500px;
+    border: 10px solid black;
+    margin: auto;
+  
+    overflow: hidden;
+    background-color: rgb(121, 179, 255);
+}
+#block{
+    width: 50px;
+    height: 500px;
+    
+    background-color: rgb(47, 159, 105);
+    position: relative;
+    left: 400px;
+    
+    animation: block 2s infinite linear;
+}
+@keyframes block{
+    0%{left:400px}
+    100%{left:-50px}
+}
+#hole{
+    width: 50px;
+    height: 150px;
+    background-color: rgb(121, 179, 255);
+    border-top: 10px solid green;
+    border-bottom: 10px solid green;
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: block 2s infinite linear;
+}
+#character{
+    width: 20px;
+    height: 20px;
+    margin-left:10px ;
+    background-color: red;
+    border: 5px solid yellow;
+    position: absolute;
+    top: 100px;
+    border-radius: 50%;
+}
+
+.bb{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 15vh;
+    color: rgb(70, 162, 243);
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#dis{
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+
+
